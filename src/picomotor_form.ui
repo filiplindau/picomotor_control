@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>539</width>
+    <height>189</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>fel-motor1 picomotor</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Motor 1 (Horisontal)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="Left_m1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/newPrefix/left.png</normalon>
+          </iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="Pos_m1_SpinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="suffix">
+          <string> steps</string>
+         </property>
+         <property name="decimals">
+          <number>0</number>
+         </property>
+         <property name="minimum">
+          <double>-200000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>200000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Right_m1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/newPrefix/right.png</normalon>
+           <activeoff>:/newPrefix/right.png</activeoff>
+           <activeon>:/newPrefix/right.png</activeon>
+           <selectedon>:/newPrefix/right.png</selectedon>
+          </iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Step:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="Step_m1_SpinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>70</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="suffix">
+          <string> step</string>
+         </property>
+         <property name="decimals">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <double>10000.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Motor 2 (Vertical)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="Left_m2_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/newPrefix/left.png</normalon>
+          </iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="Pos_m2_SpinBox">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="suffix">
+          <string> steps</string>
+         </property>
+         <property name="decimals">
+          <number>0</number>
+         </property>
+         <property name="minimum">
+          <double>-200000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>200000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Right_m2_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/newPrefix/right.png</normalon>
+          </iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Step:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="Step_m2_SpinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>90</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="suffix">
+          <string> step</string>
+         </property>
+         <property name="decimals">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <double>10000.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QFormLayout" name="formLayout_4">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <property name="verticalSpacing">
+        <number>6</number>
+       </property>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Command</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="manual_Command_lineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>115</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="reset_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Zero</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QRadioButton" name="radioButtonSteps">
+         <property name="text">
+          <string>steps</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonMm">
+         <property name="text">
+          <string>mm</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Speed</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="speedSpinBox">
+         <property name="suffix">
+          <string> steps/s</string>
+         </property>
+         <property name="decimals">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <double>2000.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>250.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEdit"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pico_images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Left_m1_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>m1_step_left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>24</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>24</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Right_m1_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>m1_step_right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Left_m2_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>m2_step_left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Right_m2_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>m2_step_right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>198</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Pos_m1_SpinBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Dialog</receiver>
+   <slot>m1_move()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Pos_m2_SpinBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Dialog</receiver>
+   <slot>m2_move()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Step_m1_SpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>Dialog</receiver>
+   <slot>m1_changeStep()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Step_m2_SpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>Dialog</receiver>
+   <slot>m2_changeStep()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>manual_Command_lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>Dialog</receiver>
+   <slot>manual_Command()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>81</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reset_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reset_positions()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>373</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButtonSteps</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>selectUnit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>385</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButtonMm</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>selectUnit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>stopMotors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>speedSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>Dialog</receiver>
+   <slot>speedChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>343</x>
+     <y>149</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>323</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>m1_step_left()</slot>
+  <slot>m1_step_right()</slot>
+  <slot>m2_step_left()</slot>
+  <slot>m2_step_right()</slot>
+  <slot>m1_move()</slot>
+  <slot>m2_move()</slot>
+  <slot>m1_changeStep()</slot>
+  <slot>m2_changeStep()</slot>
+  <slot>manual_Command()</slot>
+  <slot>reset_positions()</slot>
+  <slot>selectUnit()</slot>
+  <slot>stopMotors()</slot>
+  <slot>speedChanged()</slot>
+ </slots>
+</ui>
